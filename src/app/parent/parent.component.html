@@ -1,0 +1,5 @@
+<div style="width: 500px; height: 500px; background-color: chocolate; position: relative; text-align: center; float: left">
+  <h3>{{message}}</h3>
+  <app-child [parentMessage]="childData" (messageEvent)="receiveMsg($event)"></app-child>
+  <h4>{{messageFromChild}}</h4>
+</div>
